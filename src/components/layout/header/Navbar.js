@@ -26,11 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <header
-      className="flex items-center bg-white 
-                      fixed top-[43px] left-0 right-0 
-                      md:px-10 py-3 gap-10 px-5"
-    >
+    <header className="flex items-center bg-white fixed top-[43px] left-0 right-0 md:px-10 py-3 gap-10 px-5">
       <div className="md:hidden cursor-pointer" onClick={openMenu}>
         <HamburgerMenu />
       </div>
@@ -44,9 +40,7 @@ const Navbar = () => {
       <ul className="hidden md:flex flex-wrap">
         {menu.map((navLink, index) => (
           <li
-            className="text-black text-xs uppercase 
-          font-light z-50 ml-5 tracking-wider 
-          hover:text-gold cursor-pointer mb-2"
+            className="text-black text-xs uppercase font-light z-50 ml-5 tracking-wider hover:text-gold cursor-pointer mb-2"
             key={index}
           >
             {navLink}
@@ -68,15 +62,10 @@ const Navbar = () => {
         </li>
       </ul>
       {isOpen && (
-        <ul
-          className="ease-in md:hidden flex flex-col w-screen  
-                       mt-50 absolute top-[53px] sm:top-[72px] left-0"
-        >
+        <ul className="ease-in md:hidden flex flex-col w-screen  mt-50 absolute top-[53px] sm:top-[72px] left-0">
           {menu.map((navLink, index) => (
             <li
-              className="text-black text-sm uppercase 
-                        z-50  tracking-wider cursor-pointer 
-                        p-5 even:bg-mdgray odd:bg-gray"
+              className="text-black text-sm uppercase z-50  tracking-wider cursor-pointer p-5 even:bg-mdgray odd:bg-gray"
               key={index}
             >
               {navLink}

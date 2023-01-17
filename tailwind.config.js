@@ -7,7 +7,8 @@ module.exports = {
       gray: "#f4f4f4",
       gold: "#d6954b",
       black: "#000",
-      mdgray:' #fbfbfb'
+      mdgray:' #fbfbfb',
+      dgray:' #4a4a4a'
     },
 
     letterSpacing: {

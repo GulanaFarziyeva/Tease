@@ -2,13 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'IBM Plex Serif', serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", serif;
 }
 
-body{
-    overflow-x: hidden !important;
+body {
+  overflow-x: hidden !important;
+}
+
+.text-head {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.cart-item img {
+  height: 350px !important;
+  object-fit: cover;
+}
+
+.cart-item {
+  margin: 0 10px;
+}
+
+.slick-arrow {
+  margin-right: 2%;
+  background: none;
+}
+.slick-prev {
+  display: none !important;
+}
+
+.slick-arrow.slick-next:before {
+  content: "";
+}
+
+.slick-arrow.slick-prev:before {
+  content: "";
+}
+
+.cart:hover .overlay {
+  display: flex;
 }
